@@ -1,0 +1,51 @@
+
+* Idea
+*** Firefox plugin/extension
+***** phase 1: Display a tree of links from their originating points.
+***** phase 2: Add search
+***** phase 3: Display single tab at a time.. Let users switch to tabs from tabless page.
+******* Ergo.. become a full-fledged tab manager (optionally, ofcourse)
+
+* Why?
+*** Often times, I open a series of pages from reddit, SO, HN, etc and I need to remember where to go back for their comments.
+***** or maybe sometimes, I just find it easier to navigate through pages when I remember my workflow starting from an empty tab.
+
+* The what?
+*** Unrelated pages will be different trees of their own.
+*** Workflow
+***** Open FF
+******* reddit.com
+********* link1 (back to reddit.com)
+********* link2
+*********** browse to link2/somepage
+******* 9gag.com
+********* 9gag.com/page1
+*********** fb profile
+********* 9gag.com/page2
+*** Display links like in org-mode
+*** Configure
+***** purge timeout
+***** Use as tab-manager replacement or just for quick switching occasionally
+******* i.e. dont bother me unless i press C-e explicitly
+******* put me back in default FF tab mode when i exit from tabless
+*** Easy search (fuzzy search/partial keyword search) to switch to a tab
+*** Color active/closed tabs
+*** expand/unexpand all a.l.a S-tab in org-mode
+*** Highlight current selection
+*** Keyboard shortcuts
+***** C-e open tabless
+******* s - search
+******* Ret - Switch to active tab/open clicked in link a new tab (old inactive closed tab)
+********* if not in "leaf" node [i.e. not last entry in a tab group], open all links (if inactive),
+********* if active non leaf, merely switch to it.
+******* S-tab - cycle through tab "groups"
+******* r - remove entry
+******* p - purge all tabs (remove all tab groups, active tabs will be closed.. FF history will still have all tabs visited)
+********* At this point, tabless puts u back in FF tab bar.
+******* n - new tab
+********* puts in FF tab bar
+******* Arrows/hjkl - navigation
+******* x - exit
+*** Mouse?
+***** Just to click links
+
